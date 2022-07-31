@@ -1,7 +1,7 @@
 # A-Guide-to-Dapps
 Are you new to web3 and you want to write your first smart contract the easiest way? Try this tutorial
 
-Preparation
+# Preparation
 Download and Install MetaMask
 
 Never used Metamask? Watch this explainer video
@@ -12,7 +12,8 @@ Click Ethereum Mainnet in the top. Change to the Ropsten Tesnet and get a copy o
 
 Request some Ropsten Tesnet Ether from a faucet loaded into your Metamask Wallet.
 
-Faucet link to request funds
+# Faucet link to request funds
+https://testnet.help/en/ethfaucet/ropsten
 Blog explaining a faucet and how to use one
 Install a http server. Use any you like, but we recommend lite-server for beginners:
 
@@ -73,12 +74,12 @@ OPTIONAL: Inside the <head> tag, add some styles to make it look nicer
 </style>
 Serve the webpage via terminal/command prompt from the directory that has index.html in it and run:
 
-lite-server
+# lite-server
 Go to http://127.0.0.1:3000/ in your browser to see your page!
 
 Your front end is now complete!
 
-Create a Basic Smart Contract
+# Create a Basic Smart Contract
 Now it's time to create a Solidity smart contract.
 
 You can use any editor you like to make the contract. For this tutorial we recommend the online IDE Remix
@@ -90,7 +91,7 @@ Check out the "Solidity Compiler", and "Deploy and Run Transactions" tabs. If th
 
 Create a new solidity file in remix, named mood.sol
 
-Write the contract
+# Write the contract
 
 Specify the solidity version and add a license
 // SPDX-License-Identifier: MIT
@@ -234,7 +235,7 @@ DONE!
 Celebrate! You just made a webpage that interacted with a real live Ethereum testnet on the internet! That is not something many folks can say they have done!
 
 If you had trouble with the tutorial, you can try out the example app provided.
-git clone https://github.com/NaijaTechBro
+git clone https://github.com/NaijaTechBro/A-Guide-to-Dapp
 cd BasicFrontEndTutorial
 lite-server
 Try and use the following information to interact with an existing contract we published on the Roptsen testnet:
