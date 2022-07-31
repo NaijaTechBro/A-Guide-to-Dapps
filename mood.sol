@@ -12,4 +12,4 @@ contract MoodDiary{
          
          }
 }
-         
+         // Its better to try this out on remix than vscode.
