@@ -122,7 +122,7 @@ Deploy the contract under the "Deploy and Run Transactions" tab
 Under the Deployed Contracts section, you can test out your functions on the Remix Run tab to make sure your contract works as expected!
 Be sure to deploy on Ropsten via Remix under the Injected Web3 environment and confirm the deployment transaction in Metamask
 
-Make a new temporary file to hold:
+# Make a new temporary file to hold:
 
 The deployed contract's address
 Copy it via the copy button next to the deployed contracts pulldown in remix's Run tab
@@ -198,7 +198,7 @@ const MoodContractABI = [
 		"type": "function"
 	}
 ]
-Next, Define an ethers provider. In our case it is Ropsten:
+# Next, Define an ethers provider. In our case it is Ropsten:
 const provider = new ethers.providers.Web3Provider(window.ethereum, "ropsten");
 Request access to the user's wallet and connect the signer to your metamask account (we use [0] as the default), and define the contract object using your contract address, ABI, and signer
 provider.send("eth_requestAccounts", []).then(() => {
@@ -226,7 +226,7 @@ async function setMood() {
 Connect your functions to your html buttons
 <button onclick="getMood()">Get Mood</button>
 <button onclick="setMood()">Set Mood</button>
-Test Your Work Out!
+# Test Your Work Out!
 Got your webserver up? Go to http://127.0.0.1:3000/ in your browser to see your page!
 Test your functions and approve the transactions as needed through Metamask. Note block times are ~15 seconds... so wait a bit to read the state of the blockchain
 See your contract and transaction info via https://ropsten.etherscan.io/
@@ -234,14 +234,14 @@ Open a console (Ctrl + Shift + i) in the browser to see the magic happen as you 
 DONE!
 Celebrate! You just made a webpage that interacted with a real live Ethereum testnet on the internet! That is not something many folks can say they have done!
 
-If you had trouble with the tutorial, you can try out the example app provided.
+# If you had trouble with the tutorial, you can try out the example app provided.
 git clone https://github.com/NaijaTechBro/A-Guide-to-Dapp
 cd BasicFrontEndTutorial
 lite-server
 Try and use the following information to interact with an existing contract we published on the Roptsen testnet:
 We have a MoodDiary contract instance created at this transaction
 
-Here is the contract (on etherscan)
+# Here is the contract (on etherscan)
 
 We also verified our source code to ropsten.etherscan.io as an added measure for you to verify what the contract is exactly, and also the ABI is available to the world!
 The ABI is also in this file
